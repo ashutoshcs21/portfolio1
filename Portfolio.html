@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ashutosh Dixit's Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f9;
+            color: #333;
+            transition: background-color 0.5s ease;
+        }
+        body:hover {
+            background-color: #e8f0fe;
+        }
+        header {
+            background: #0078ff;
+            color: #fff;
+            padding: 1rem 0;
+            text-align: center;
+        }
+        nav {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            margin-top: 10px;
+        }
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            font-weight: bold;
+            transition: color 0.3s ease;
+        }
+        nav a:hover {
+            color: #ffd700;
+        }
+        section {
+            margin: 2rem auto;
+            padding: 1rem;
+            max-width: 1100px;
+            background: #fff;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+            transition: transform 0.3s ease;
+        }
+        section:hover {
+            transform: scale(1.02);
+        }
+        h1, h2 {
+            text-align: center;
+            margin-bottom: 1rem;
+        }
+        .project {
+            border: 1px solid #ddd;
+            padding: 1rem;
+            border-radius: 5px;
+            margin-bottom: 1.5rem;
+            transition: box-shadow 0.3s ease;
+        }
+        .project:hover {
+            box-shadow: 0 0 15px rgba(0, 120, 255, 0.3);
+        }
+        .project h3 {
+            margin: 0;
+            color: #0078ff;
+        }
+        .project p {
+            margin: 0.5rem 0;
+        }
+        footer {
+            text-align: center;
+            padding: 1rem 0;
+            background: #0078ff;
+            color: #fff;
+            margin-top: 2rem;
+        }
+        img {
+            display: block;
+            max-width: 100%;
+            height: auto;
+            border-radius: 8px;
+            margin: 1rem auto;
+        }
+    </style>
+</head>
+<body>
+    <!-- Header Section -->
+    <header>
+        <h1>Ashutosh Dixit's Portfolio</h1>
+        <p>Full-Stack Developer | Java | React.js | Node.js | AWS DevOps</p>
+        <nav>
+            <a href="#about">About Me</a>
+            <a href="#projects">Projects</a>
+            <a href="#skills">Skills</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
+
+    <!-- About Me Section -->
+    <section id="about">
+        <h2>About Me</h2>
+        <p>
+            Hi, I’m Ashutosh Dixit, a passionate **Full-Stack Developer** with hands-on experience in building web applications using **React.js, Node.js, and Express.js**. I’m skilled in problem-solving (170+ solved problems on LeetCode) and have practical experience with **AWS DevOps tools**.
+        </p>
+        <img src="data:image/jpeg;base64,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" alt="About Me">
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects">
+        <h2>Projects</h2>
+        <div class="project">
+            <h3>Car Rental WebApplication</h3>
+            <p>Developed a secure and user-friendly Car Rental WebApplication.</p>
+            <p><strong>Technologies:</strong> React.js, Node.js, Express.js</p>
+            <img src="https://repository-images.githubusercontent.com/443216312/1758c6d4-d4b1-4d78-b856-3a596c09d2da" alt="Online Voting System">
+        </div>
+        <div class="project">
+            <h3>N-Queen Visualizer</h3>
+            <p>Built a visualization tool to demonstrate solutions for the N-Queens problem using interactive UI components.</p>
+            <p><strong>Technologies:</strong> HTML, CSS, JavaScript</p>
+            <img src="https://miro.medium.com/v2/resize:fit:823/1*jk9XiczxP80-KPSaTiOwqw.png" alt="N-Queen Visualizer">
+        </div>
+        <div class="project">
+            <h3>Sudoku Solver</h3>
+            <p>Created a Sudoku Solver that efficiently solves puzzles and enhances algorithmic understanding.</p>
+            <p><strong>Technologies:</strong> JavaScript</p>
+            <img src="data:image/png;base64,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" alt="Sudoku Solver">
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills">
+        <h2>Skills</h2>
+        <ul>
+            <li>Java | Data Structures & Algorithms</li>
+            <li>React.js | HTML | CSS | JavaScript</li>
+            <li>Node.js | Express.js</li>
+            <li>AWS DevOps Tools</li>
+            <li>Content Writer</li>
+        </ul>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact">
+        <h2>Contact Me</h2>
+        <p>
+            📧 **Email**: ashutosh.dixit.up32@gmail.com<br>
+            💼 **LinkedIn**: <a href="https://www.linkedin.com/in/ashutosh-dixit-16b30721a" target="_blank">LinkedIn Profile</a><br>
+            🧑‍💻 **GitHub**: <a href="https://github.com/ashutoshcs21" target="_blank">GitHub Profile</a>
+        </p>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 Ashutosh Dixit | Full-Stack Developer</p>
+    </footer>
+</body>
+</html>
